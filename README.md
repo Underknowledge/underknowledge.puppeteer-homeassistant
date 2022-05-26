@@ -15,6 +15,7 @@ Let's use it instead as a dasboard for the weather!
 When you want to follow on,    
 Search on the web for something like `Kindle ssh access` and I bet you'll find a lot of resources to set up your Reader that way.  the [Mobileread Forum](https://www.mobileread.com) is cind of the main hub for kindle personilasation. 
 
+If you want to see a feature, I am open to pull requests. Or open a issue. While I'm time wise very limited, I'll leave it with a maybe
 
 # Setup 
 You just build the container by yourself.
@@ -41,6 +42,9 @@ Move the `.env_sample` to `.env` and change the values according to your needs
 afterwards it is just 
 ```bash
 docker-compose up -d 
+
+# whats going on 
+docker logs --follow --tail 20 --details pupeteer
 ```
 This will pull the latest `node` container and install some tools to run this
 
@@ -74,7 +78,6 @@ when you want to use another device, set the `desiredWidth` and `desiredHeight` 
     const desiredWidth = 758;
     const desiredHeight = 1024;
     const ScaleFactor = 1.35;
-
 
 And always remember, 
 If you do not have root privileges, it is not your device.
