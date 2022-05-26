@@ -3,5 +3,5 @@
 while true;
 do
     ./homeassistant.sh
-    sleep "${SLEEP:=1m}" 
+    sleep ${SLEEP:=1m}
 done
