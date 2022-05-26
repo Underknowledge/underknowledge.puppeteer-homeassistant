@@ -47,4 +47,4 @@ ADD homeassistant.sh /opt/puppeteer/homeassistant.sh
 ADD home_assistant.js /opt/puppeteer/home_assistant.js
 ADD entrypoint.sh /opt/puppeteer/entrypoint.sh
 
-RUN /bin/bash -c '/opt/puppeteer/entrypoint.sh'
+ENTRYPOINT ["/opt/puppeteer/entrypoint.sh"]
