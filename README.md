@@ -10,7 +10,7 @@ A pretty specific container tailored to my use case.
 I received a rooted Kindle PW1 with SSH access as a gift. I still use it (occasionally) for reading, but most of the time it gathers dust in a corner until I need it and it ran out of power last week..
 Let's use it instead as a dasboard for the weather!
 
-![](home_assistant.png | width="379"  height="512")
+![](home_assistant.png =379x512)
 
 
 When you want to follow on,    
