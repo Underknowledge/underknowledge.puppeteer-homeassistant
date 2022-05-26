@@ -7,13 +7,13 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        - KINDLE_IP="${KINDLE_IP}" 
+        - KINDLE_IP="${KINDLE_IP}"
         - KINDLE_PASSWORD=${KINDLE_PASSWORD}
         - HOMEASSISTANT_LOGIN_USER="${HOMEASSISTANT_LOGIN_USER}"
         - HOMEASSISTANT_LOGIN_PASS="${HOMEASSISTANT_LOGIN_PASS}"
         - HOMEASSISTANT_URL="${HOMEASSISTANT_URL}"
-        - SLEEP="${SLEEP}"
-        - READING_DURATION="${READING_DURATION}"
+        - SLEEP=${SLEEP}
+        - READING_DURATION=${READING_DURATION}
     env_file:
     - .env
     restart: always

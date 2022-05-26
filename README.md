@@ -47,8 +47,7 @@ This will pull the latest `node` container and install some tools to run this
 It's fun to refresh the screen every minute, but that would prevent the main functionality.
 If you want to use your reader, set the brightness to maximum until the next picture update occurs. 
 If the Reader brightness is above `240`, the script will sleep as long as you set your `$READING_DURATION`. 
-~~ you can use the options of sleep (`60, 60s, 1m, 2h, ...`) ~~ This only worked while testing, well now you have to define secconds :man_shrugging: 
-
+you can use the options of sleep (`60, 60s, 1m, 2h, ...`) 
 
 # Updating 
 

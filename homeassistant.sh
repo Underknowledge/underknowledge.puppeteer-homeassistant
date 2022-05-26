@@ -12,7 +12,7 @@ if nc -z -w 1 ${KINDLE_IP} 22 ; then
   brightness=$(sshpass -p "${KINDLE_PASSWORD}" ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no 'bash -c "cat /sys/devices/system/fl_tps6116x/fl_tps6116x0/fl_intensity"' 2>/dev/null | grep -o -e '[0-9]' |  tr -d "\n")
   if [ "$brightness" -gt 240 ]; then
       echo "You probably want to read something... Sleeping for $READING_DURATION"
-      sleep ${READING_DURATION}
+      sleep ${READING_DURATION} || sleep 7200
   fi
   # Run pupeteer
   node home_assistant.js
