@@ -10,7 +10,7 @@ A pretty specific container tailored to my use case.
 I received a rooted Kindle PW1 with SSH access as a gift. I still use it (occasionally) for reading, but most of the time it gathers dust in a corner until I need it and it ran out of power last week..
 Let's use it instead as a dasboard for the weather!
 
-![](home_assistant.png)
+![](home_assistant.png | width="379"  height="512")
 
 
 When you want to follow on,    
@@ -19,7 +19,12 @@ Search on the web for something like `Kindle ssh access` and I bet you'll find a
 
 # Setup 
 
-Copy the `.env_sample` to `.env` and change the values according to your needs 
+```bash
+git clone https://github.com/Underknowledge/underknowledge.puppeteer-homeassistant /opt/puppeteer-homeassistant
+cd /opt/puppeteer-homeassistant
+```
+
+Move the `.env_sample` to `.env` and change the values according to your needs 
 
 
     KINDLE_IP=10.0.0.12
@@ -46,6 +51,7 @@ you can use the options of sleep (`60, 60s, 1m, 2h, ...`)
 # Tweaking 
 
 in `home_assistant.js` you might should able to dial around with these settings.  
+
     const desiredWidth = 758;
     const desiredHeight = 1024;
     const ScaleFactor = 1.35;
