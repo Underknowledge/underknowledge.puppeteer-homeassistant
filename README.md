@@ -10,7 +10,7 @@ A pretty specific container tailored to my use case.
 I received a rooted Kindle PW1 with SSH access as a gift. I still use it (occasionally) for reading, but most of the time it gathers dust in a corner until I need it and it ran out of power last week..
 Let's use it instead as a dasboard for the weather!
 
-<img src="https://github.com/Underknowledge/underknowledge.puppeteer-homeassistant/raw/main/home_assistant.png" alt="" data-canonical-src="https://github.com/Underknowledge/underknowledge.puppeteer-homeassistant/raw/main/home_assistant.png" width="379" height="400" />
+<img src="https://github.com/Underknowledge/underknowledge.puppeteer-homeassistant/raw/main/home_assistant.png" alt="" data-canonical-src="https://github.com/Underknowledge/underknowledge.puppeteer-homeassistant/raw/main/home_assistant.png" width="358" height="485" />
 
 When you want to follow on,    
 Search on the web for something like `Kindle ssh access` and I bet you'll find a lot of resources to set up your Reader that way.  the [Mobileread Forum](https://www.mobileread.com) is cind of the main hub for kindle personilasation. 
