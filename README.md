@@ -10,6 +10,12 @@ A pretty specific container tailored to my use case.
 I received a rooted Kindle PW1 with SSH access as a gift. I still use it (occasionally) for reading, but most of the time it gathers dust in a corner until I need it and it ran out of power last week..
 Let's use it instead as a dasboard for the weather!
 
+
+
+> [!NOTE]
+> There is another project doing rather the same thing, but probably better: [sibbl/hass-lovelace-kindle-screensaver](https://github.com/sibbl/hass-lovelace-kindle-screensaver)  
+> From what I hear it is a bit harder to setup as this one, but who am I to judge, I've written this :D
+
 <img src="https://github.com/Underknowledge/underknowledge.puppeteer-homeassistant/raw/main/home_assistant.png" alt="" data-canonical-src="https://github.com/Underknowledge/underknowledge.puppeteer-homeassistant/raw/main/home_assistant.png" width="358" height="485" />
 
 When you want to follow on,    
