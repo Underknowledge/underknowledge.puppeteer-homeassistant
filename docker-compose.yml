@@ -17,3 +17,9 @@ services:
     env_file:
     - .env
     restart: always
+    volumes:
+      - chrome_profile:/opt/chrome_profile
+
+volumes:
+  chrome_profile:
+    driver: local
