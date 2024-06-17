@@ -2,6 +2,7 @@
 KINDLE_IP="${KINDLE_IP:=10.0.3.192}" 
 KINDLE_PASSWORD="${KINDLE_PASSWORD:=kindle}" 
 HOMEASSISTANT_URL="${HOMEASSISTANT_URL:=http://10.0.0.27:8123/vr-welcome/kindle?kiosk}" 
+EIPS_PATH="${EIPS_PATH:=/usr/sbin/eips}" 
 # Screaming case for docker
 export login_page="${HOMEASSISTANT_URL}"
 export login_username="${HOMEASSISTANT_LOGIN_USER:=kindle}" 
@@ -31,7 +32,7 @@ if nc -z -w 1 ${KINDLE_IP} 22 ; then
   # Copy the picture
   sshpass -p "${KINDLE_PASSWORD}" scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no home_assistant_8bit.png root@${KINDLE_IP}:/mnt/us/documents/ && echo copyed || echo "issue copying to kindle"
   # Set the picture 
-  sshpass -p "${KINDLE_PASSWORD}" ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no root@${KINDLE_IP} 'eips -g /mnt/us/documents/home_assistant_8bit.png' > /dev/null 2>&1
+  sshpass -p "${KINDLE_PASSWORD}" ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no root@${KINDLE_IP} "${EIPS_PATH} -g /mnt/us/documents/home_assistant_8bit.png" > /dev/null 2>&1
 else
   echo "Kindle not connected to the Network, or it has now another IP"
   exit 0
