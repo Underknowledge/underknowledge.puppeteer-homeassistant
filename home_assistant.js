@@ -15,6 +15,7 @@ function sleep(ms) {
   const browser = await puppeteer.launch({
   executablePath: '/usr/bin/google-chrome',
   headless: true,
+  userDataDir: '/opt/chrome_profile',
   args: ['--no-sandbox', "--disabled-setupid-sandbox"], 
     // defaultViewport:{width:1366,height:768},
   ignoreHTTPSErrors: false,
